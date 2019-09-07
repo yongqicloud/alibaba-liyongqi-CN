@@ -1,0 +1,27 @@
+.pox{
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background: #ddd;
+      &::after{
+            content: "";
+            display: block;
+            clear: both;
+      }
+      span,strong{
+            font-size: 20px;
+      }
+      span{
+            color: orangered;
+            i {
+                  font-size: 100px;
+            }
+            // & 代表当前包裹的大括号选择器;
+            &:hover{
+                  color: yellowgreen;
+            }
+      }
+      strong{
+            color: aliceblue;
+      }
+}

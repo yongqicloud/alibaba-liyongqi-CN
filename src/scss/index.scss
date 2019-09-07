@@ -1,0 +1,204 @@
+
+/*一 、 @import 我们的css从此可以进行不短的拆分确保我们的程序可维护性变高*/
+@import "./reset";
+
+/*所有的sass之中的关键字 都以 @开头*/
+
+/* 二 、变量 
+
+      sass 提供了很多的工具函数 : 
+      darken(); 黑暗;
+      ligthen(); 变量;
+*/
+@import "./variable";
+
+body{
+      background: $base-color;
+}
+#box{
+      width:100px;
+      height: 100px;
+      // background: #ddd - 100;
+      background: darken($base-color,50);
+      color: lighten($base-color , 10);
+}
+
+/*
+   三、数组 
+*/
+
+.btn{
+      background:  #ddd;
+      color: #fff;
+      border-radius: 10px;
+      border:none;
+}
+
+/*重复性的工作*/
+// .btn-small{
+//       padding: 3px 5px;
+// }
+// .btn-normal{
+//       padding:  6px 8px;
+// }
+// .btn-large{
+//       padding:  8px 10px;
+// }
+
+// 自动创建 
+// 用括号进行划分 , 创建 n 纬数组;
+// $btn-size-list : (small (3px 5px)) (normal (6px 8px)) (large (8px 10px));
+
+/* 
+      var btn_size_list = [
+            ["small",[3px,5px]],
+            ["normal",[6px,8px]],
+            ["large",[8px,10px]],
+      ]
+
+      btn_size_list[0]
+      small => btn_size_list[0][0]
+      3px 5px => btn_size_list[0][1]
+
+      btn_size_list[1]
+      btn_size_list[2]
+
+
+      nth() => 替代数组的 [] 进行数组结构的取值;
+*/
+
+// .btn-#{nth(nth($btn-size-list , 1),1)}{
+//       padding: nth(nth($btn-size-list , 1),2);
+// }
+// .btn-#{nth(nth($btn-size-list , 2),1)}{
+//       padding: nth(nth($btn-size-list , 2),2);
+// }
+// .btn-#{nth(nth($btn-size-list , 3),1)}{
+//       padding: nth(nth($btn-size-list , 3),2);
+// }
+
+// @for $index from 1 to 4 {
+//       .btn-#{nth(nth($btn-size-list , $index),1)}{
+//             padding: nth(nth($btn-size-list , $index),2);
+//       }
+// }
+
+// 四 、函数 函数这东西实在是不常用;
+// rem  
+// $html-size : 16;
+// @function ptr($px){
+//       @return $px / $html-size * 1rem; 
+// }
+// @for $index from 1 to 4 {
+//       .btn-#{nth(nth($btn-size-list , $index),1)}{
+//             padding: ptr(3) ptr(2);
+//       }
+// }
+
+// ***** 五 、 嵌套 
+
+// .pox span{
+//       color: orangered;
+// }
+// .pox strong{
+//       color: orangered;
+// }
+
+// .pox{
+//       width: 200px;
+//       height: 200px;
+//       margin: 10px;
+//       background: #ddd;
+
+//       &::after{
+//             content: "";
+//             display: block;
+//             clear: both;
+//       }
+
+//       span,strong{
+//             font-size: 20px;
+//       }
+
+//       span{
+//             color: orangered;
+//             i {
+//                   font-size: 100px;
+//             }
+//             // & 代表当前包裹的大括号选择器;
+//             &:hover{
+//                   color: yellowgreen;
+//             }
+//       }
+
+//       strong{
+//             color: aliceblue;
+//       }
+// }
+// 提取;
+
+@import "./pox";
+
+// ***** 六 、 mixin 混合;
+ 
+// @mixin margin-center {
+//       margin-left: 0;
+//       margin-right: 0;
+// }
+
+// @mixin abs-center {
+//       position: absolute;
+//       left: 0;
+//       top: 0;
+//       right: 0;
+//       bottom: 0;
+//       margin: auto;
+// }
+// mixin 接受参数;
+//       接受默认参数;
+// @mixin left-abs-center($width:0){
+//       position: absolute;
+//       left: 50%;
+//       margin-left:-$width / 2;
+// }
+
+// // c3p => css3 preFix
+// @mixin c3p($attr:transition,$content: all .5s){
+//       -webkit-#{$attr}: $content;
+//       -moz-#{$attr}: $content;
+//       -ms-#{$attr}: $content;
+//       -o-#{$attr}: $content;
+//       #{$attr}: $content;
+// }
+
+// .pox {
+//       // margin-left: 0;
+//       // margin-right: 0;
+//       @include margin-center;
+// }
+// 提取;
+@import "./mixin";
+
+#box{
+      @include abs-center;
+}
+
+.dox{
+      width: 200px;
+      height: 100px;
+      background: antiquewhite;
+     @include  left-abs-center(200px);
+     @include c3p(transform,rotate(60deg) scale(1.5));
+}
+
+// 七 继承 ;
+
+
+.cox{
+      @extend .dox;
+
+      background: #fff;
+      @include  left-abs-center(800px);
+}
+
+// if 三目运算  foreach ........... 
