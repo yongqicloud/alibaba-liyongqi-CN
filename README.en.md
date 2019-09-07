@@ -1,7 +1,7 @@
-# GP14-cli
+# Alibaba-CN-liyongqi
 
 #### Description
-好程序员PC端开发脚手架
+李永琪的阿里巴巴（中文网）项目
 
 #### Software Architecture
 Software architecture description
