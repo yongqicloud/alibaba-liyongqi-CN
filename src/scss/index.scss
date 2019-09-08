@@ -1,9 +1,11 @@
 
 /*一 、 @import 我们的css从此可以进行不短的拆分确保我们的程序可维护性变高*/
 @import "./reset";
+@import "./common";
 @import "./navtop";
 @import "./iconfont";
 @import "./search";
+@import "./infolist";
 
 /*所有的sass之中的关键字 都以 @开头*/
 

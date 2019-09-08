@@ -1,0 +1,102 @@
+.pc-new-box-gap{height:20px;}
+#info-list{
+    height:772px;
+    .info-list-cont{
+        height:772px;
+        background: lightgray;
+        // 左边盒子
+        .left-box{
+            float: left;
+            width: 200px;
+            height: 100%;
+            vertical-align: middle;
+            ul{
+                width:200px;
+                height:750px;
+                background: hotpink;
+                padding:10px 0;
+                .next-menu-item{
+                    width:100%;
+                    height: 50px;
+                    .next-menu-item-inner{
+                        height:50px;
+                        .c-menu{
+                            width:178px;
+                            height:45px;
+                            padding:5px 0 0 22px;
+                            p{
+                                height:20px;
+                                line-height: 20px;
+                                .f-14{
+                                    font-size: 14px;
+                                    font-weight: 900;
+                                    color: #333;
+                                    margin:0 10px 0 0;
+                                }
+                                .f-12{
+                                    font-size: 12px;
+                                    columns: #888;
+                                    margin:0 10px 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 右边盒子
+        .right-box{
+            float: left;
+            width:984px;
+            height:772px;
+            margin:0 0 0 16px;
+            background: lightseagreen;
+            .box-top{
+                width:984px;
+                height:420px;
+                background: #333;
+                .top-left{
+                    float: left;
+                    width:768px;
+                    height:420px;
+                    background: lightcyan;
+                }
+                .top-right{
+                    float: left;
+                    margin-left:16px;
+                    width:200px;
+                    height:420px;
+                    background: lightgrey;
+
+                }
+            }
+            .box-middle{
+                margin-top:15px;
+                width:984px;
+                height:140px;
+                background: #555;
+                .top-left{
+                    float: left;
+                    width:768px;
+                    height:140px;
+                    background: lightcyan;
+                }
+                .top-right{
+                    float: left;
+                    margin-left:16px;
+                    width:200px;
+                    height:140px;
+                    background: lightgrey;
+
+                }
+            }
+            .box-foot{
+                margin-top:14px;
+                width:984px;
+                height:181px;
+                background: #888
+            }
+        }
+        
+    }
+}
