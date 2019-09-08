@@ -1,0 +1,25 @@
+#header-search{
+    height:73px;
+    padding:20px 0 0;
+    margin:20px 0 27px;
+    background:#ddd;
+    .header-search-cont{
+        height:73px;
+        background: hotpink;
+        .searchbox{
+            height:73px;
+            position: relative;
+            width: 768px;
+            margin-left: 216px;
+            background: lightblue;
+            .world{
+                width: 36px;
+                height: 37px;
+                position: absolute;
+                left: 4px;
+                top: 4px;
+                background: #000
+            }
+        }
+    }
+}

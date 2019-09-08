@@ -1,2 +1,451 @@
-@charset "UTF-8";.pox::after,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}body{line-height:1;background:#9acd32}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}#box{width:100px;height:100px;background:#000;color:#aed75b}.btn,.pox{background:#ddd}.btn{color:#fff;border-radius:10px;border:none}.pox{width:200px;height:200px;margin:10px 0}.pox::after{content:"";clear:both}.pox span,.pox strong{font-size:20px}.pox span{color:#ff4500}.pox span i{font-size:100px}.pox span:hover{color:#9acd32}.pox strong{color:#f0f8ff}#box{position:absolute;left:0;top:0;right:0;bottom:0;margin:auto}.cox,.dox{position:absolute;left:50%;width:200px;height:100px;background:#faebd7;margin-left:-100px;-webkit-transform:rotate(60deg) scale(1.5);-moz-transform:rotate(60deg) scale(1.5);-ms-transform:rotate(60deg) scale(1.5);-o-transform:rotate(60deg) scale(1.5);transform:rotate(60deg) scale(1.5)}.cox{background:#fff;margin-left:-400px}
+@charset "UTF-8";
+/*一 、 @import 我们的css从此可以进行不短的拆分确保我们的程序可维护性变高*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+/* 公共版心 */
+.header-top-cont, .header-search-cont {
+  width: 1190px;
+  margin: 0 auto; }
+
+/* 公共样式 */
+#header-top li {
+  position: relative; }
+
+#header-top li:hover .nav-content {
+  display: block; }
+
+#header-top .nav-content {
+  z-index: 999; }
+
+#header-top .account-sign-status .nav-content {
+  left: -19px;
+  background: #fff; }
+
+#header-top .topnav li:hover .nav-arrow {
+  background: url(https://cbu01.alicdn.com/cms/upload/2016/404/906/2609404_1073447813.png) right 12px no-repeat;
+  background-position: right -25px; }
+
+#header-top .topnav li:hover .nav-title {
+  border-left: solid 1px #ececec;
+  border-right: solid 1px #ececec;
+  padding-bottom: 1px;
+  background: #fff;
+  padding-left: 9px;
+  padding-right: 10px; }
+
+#header-top a:hover {
+  color: #FF7300;
+  text-decoration: underline #ff7300; }
+
+#header-top .account-sign-status .nav-content {
+  position: absolute;
+  border: solid 1px #ececec;
+  border-top: none; }
+
+#header-top dl {
+  float: left;
+  padding: 0 8px 8px; }
+
+#header-top dl dt {
+  height: 29px;
+  line-height: 29px; }
+
+#header-top dl dd {
+  height: 24px;
+  line-height: 24px; }
+
+#header-top dl dt a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555; }
+
+#header-top dl dd a {
+  font-size: 12px;
+  color: #555; }
+
+/* 首部导航栏最后一个二级菜单 */
+.header-top-cont .topnav .zone .name, .header-top-cont .topnav .zone .detail {
+  float: left; }
+
+/* 最顶部登陆 nav */
+#header-top {
+  height: 28px;
+  border-bottom: 1px solid #ddd; }
+
+.header-top-cont {
+  height: 29px; }
+
+.header-top-cont .mobile {
+  width: 48px;
+  height: 29px;
+  color: #555;
+  padding: 0 10px 0 16px;
+  float: left;
+  background: url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png) no-repeat left;
+  background-position: 0 calc(50% - 6px); }
+
+.header-top-cont .mobile a {
+  display: block;
+  width: 48px;
+  height: 29px;
+  line-height: 29px;
+  color: #555;
+  font-size: 12px; }
+
+.header-top-cont .account-sign-status {
+  width: 235px;
+  height: 100%;
+  float: left; }
+
+.header-top-cont .account-sign-status li {
+  float: left;
+  position: relative; }
+
+.header-top-cont .account-sign-status .account-welcome {
+  padding: 0 8px 0 0; }
+
+.header-top-cont .account-sign-status .account-welcome .nav-title {
+  width: 96px;
+  height: 29px;
+  line-height: 29px;
+  padding: 0 5px 0 11px; }
+
+.header-top-cont .account-sign-status .account-welcome .nav-title span {
+  display: block;
+  font-size: 12px; }
+
+.account-signin {
+  width: 36px;
+  height: 29px;
+  line-height: 29px;
+  padding: 0 8px 0 15px;
+  background: url(https://img.alicdn.com/tfs/TB1EV4XrAvoK1RjSZPfXXXPKFXa-12-16.png) no-repeat left; }
+
+.header-top-cont .account-sign-status .account-signin a {
+  display: block;
+  font-size: 12px;
+  color: #555; }
+
+.header-top-cont .account-signup {
+  width: 48px;
+  height: 29px;
+  line-height: 29px;
+  padding: 0 8px 0 0; }
+
+.header-top-cont .account-signup a {
+  display: block;
+  font-size: 12px;
+  color: #555; }
+
+.header-top-cont .nav-content {
+  display: none;
+  width: 260px;
+  min-height: 50px;
+  padding: 20px 0 26px 26px;
+  position: absolute; }
+
+.header-top-cont .nav-content p {
+  width: 260px;
+  height: 20px;
+  font-size: 14px;
+  color: #333;
+  line-height: 20px; }
+
+.header-top-cont .nav-content .signin-close-box {
+  position: absolute;
+  right: 12px;
+  top: 21px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background: url(https://img.alicdn.com/tfs/TB1WJ8lrhTpK1RjSZFKXXa2wXXa-12-10.png) no-repeat center; }
+
+.header-top-cont .nav-content .fd-clr {
+  width: 260px;
+  height: 58px; }
+
+.header-top-cont .nav-content ul li {
+  float: left;
+  width: 75px;
+  font-size: 12px;
+  margin-right: 15px;
+  padding-left: 20px;
+  color: #FF6000;
+  background: url(https://img.alicdn.com/tfs/TB140FnrkvoK1RjSZFNXXcxMVXa-14-14.png) no-repeat left center; }
+
+.header-top-cont .topnav {
+  float: right; }
+
+.header-top-cont .topnav ul li {
+  float: left; }
+
+.header-top-cont .topnav ul li .nav-title {
+  height: 29px;
+  line-height: 29px;
+  padding: 0 11px 0 10px;
+  background: url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png) no-repeat right;
+  background-position: right -145px; }
+
+.header-top-cont .topnav ul li .nav-title a {
+  display: block;
+  font-size: 12px; }
+
+.header-top-cont .topnav .nav-arrow {
+  padding: 0 9px 0 0;
+  background: url(https://cbu01.alicdn.com/cms/upload/2016/404/906/2609404_1073447813.png) right 12px no-repeat; }
+
+.header-top-cont .topnav .purchaselist-value {
+  float: right;
+  display: block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  margin-top: 7px;
+  margin-left: 3px;
+  margin-right: 2px;
+  background: url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png) no-repeat;
+  background-position: 0 0; }
+
+.header-top-cont .topnav .purchaselist-value em {
+  display: block;
+  width: 9px;
+  height: 15px;
+  padding: 0 3px;
+  line-height: 15px;
+  background-color: #ff7300;
+  color: #fff;
+  margin-left: 3px;
+  position: relative; }
+
+.header-top-cont .topnav .topnav-favorite i {
+  font-size: 14px; }
+
+.header-top-cont .topnav .hangye-category {
+  padding: 5px 0 0 15px; }
+
+.header-top-cont .topnav .zone .name {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 8px 8px 0;
+  height: 14px;
+  line-height: 14px; }
+
+.header-top-cont .topnav .zone {
+  width: 440px;
+  padding: 0 0 10px; }
+
+.header-top-cont .topnav .topnav-sitemap .detail {
+  width: 370px; }
+
+#header-top .topnav .nav-content {
+  display: none;
+  position: absolute;
+  top: 28px;
+  min-height: 50px;
+  padding: 5px 0 0;
+  background: #fff;
+  color: #555;
+  border: solid 1px #ececec;
+  border-top: none;
+  top: 30px; }
+
+#header-top .topnav-myali .nav-content {
+  left: 0;
+  width: 252px;
+  top: 30px; }
+
+#header-top .topnav-favorite .nav-content {
+  top: 28px;
+  min-height: 50px;
+  width: 225px;
+  background: #fff;
+  color: #555;
+  border: solid 1px #ececec;
+  border-top: none;
+  top: 30px; }
+
+#header-top .topnav-wsgys .nav-content {
+  left: 0;
+  width: 88px;
+  top: 30px; }
+
+#header-top .topnav-kf .nav-content {
+  left: 0;
+  width: 76px;
+  top: 30px; }
+
+#header-top .topnav .topnav-slsj .nav-content {
+  width: 76px;
+  top: 30px; }
+
+#header-top .topnav-tp .nav-content {
+  left: 0;
+  width: 125px;
+  top: 30px; }
+
+#header-top .topnav-sitemap .nav-content {
+  width: 453px;
+  right: 0;
+  top: 30px; }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("//at.alicdn.com/t/font_1388227_9ls3dr50srf.eot?t=1567781666068");
+  /* IE9 */
+  src: url("//at.alicdn.com/t/font_1388227_9ls3dr50srf.eot?t=1567781666068#iefix") format("embedded-opentype"), url("data:application/x-font-woff2;charset=utf-8;base64,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") format("woff2"), url("//at.alicdn.com/t/font_1388227_9ls3dr50srf.woff?t=1567781666068") format("woff"), url("//at.alicdn.com/t/font_1388227_9ls3dr50srf.ttf?t=1567781666068") format("truetype"), url("//at.alicdn.com/t/font_1388227_9ls3dr50srf.svg?t=1567781666068#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-card:before {
+  content: "\e6c5"; }
+
+.icon-gift:before {
+  content: "\e691"; }
+
+.icon-phone:before {
+  content: "\e62c"; }
+
+.icon-shoucang:before {
+  content: "\e71f"; }
+
+.icon-denglong:before {
+  content: "\e601"; }
+
+.icon-shoucang2:before {
+  content: "\e613"; }
+
+.icon-star:before {
+  content: "\e6f5"; }
+
+#header-search {
+  height: 73px;
+  padding: 20px 0 0;
+  margin: 20px 0 27px;
+  background: #ddd; }
+  #header-search .header-search-cont {
+    height: 73px;
+    background: hotpink; }
+    #header-search .header-search-cont .searchbox {
+      height: 73px;
+      position: relative;
+      width: 768px;
+      margin-left: 216px;
+      background: lightblue; }
+      #header-search .header-search-cont .searchbox .world {
+        width: 36px;
+        height: 37px;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        background: #000; }
+
+/*所有的sass之中的关键字 都以 @开头*/
+/* 二 、变量 
+
+      sass 提供了很多的工具函数 : 
+      darken(); 黑暗;
+      ligthen(); 变量;
+*/
+/*基准色*/
+/* 类名创建数组 */
+/*
+   三、数组 
+*/
+/*重复性的工作*/
+/* 
+      var btn_size_list = [
+            ["small",[3px,5px]],
+            ["normal",[6px,8px]],
+            ["large",[8px,10px]],
+      ]
+
+      btn_size_list[0]
+      small => btn_size_list[0][0]
+      3px 5px => btn_size_list[0][1]
+
+      btn_size_list[1]
+      btn_size_list[2]
+
+
+      nth() => 替代数组的 [] 进行数组结构的取值;
+*/
+.pox {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background: #ddd; }
+  .pox::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .pox span, .pox strong {
+    font-size: 20px; }
+  .pox span {
+    color: orangered; }
+    .pox span i {
+      font-size: 100px; }
+    .pox span:hover {
+      color: yellowgreen; }
+  .pox strong {
+    color: aliceblue; }
+
+.pox {
+  margin-left: 0;
+  margin-right: 0; }
+
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,69 @@
+/* 公共版心 */
+.header-top-cont,.header-search-cont{width:1190px; margin:0 auto;}
+/* 公共样式 */
+#header-top li{position: relative;}
+#header-top li:hover .nav-content{display:block;}
+#header-top .nav-content{z-index: 999;}
+#header-top .account-sign-status .nav-content{left:-19px; background: #fff}
+#header-top .topnav li:hover .nav-arrow{background:url(https://cbu01.alicdn.com/cms/upload/2016/404/906/2609404_1073447813.png) right 12px no-repeat;  background-position: right -25px;}
+#header-top .topnav li:hover .nav-title{border-left: solid 1px #ececec;
+      border-right: solid 1px #ececec;
+      padding-bottom: 1px;
+      background: #fff;
+      padding-left: 9px;
+      padding-right: 10px;}
+#header-top a:hover{color:#FF7300; text-decoration:underline #ff7300}
+#header-top .account-sign-status .nav-content{position: absolute; border: solid 1px #ececec;border-top: none;}
+#header-top dl{ float: left; padding:0 8px 8px;}
+#header-top dl dt{height:29px; line-height: 29px}
+#header-top dl dd{height:24px;line-height: 24px}
+#header-top dl dt a{font-size: 12px; font-weight: 700; color:#555 ;}
+#header-top dl dd a{font-size: 12px;  color: #555}
+
+/* 首部导航栏最后一个二级菜单 */
+.header-top-cont .topnav  .zone .name, .header-top-cont .topnav .zone .detail{float: left;}
+/* 最顶部登陆 nav */
+#header-top{height:28px; border-bottom:1px solid #ddd;}
+.header-top-cont{height:29px;}
+.header-top-cont .mobile{width:48px; height:29px; color: #555; padding:0 10px 0 16px; float: left; background:url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png) no-repeat left;
+     background-position:0 calc(50% - 6px);}
+.header-top-cont .mobile a{display:block; width:48px; height:29px; line-height: 29px; color: #555; font-size:12px;}
+
+
+.header-top-cont .account-sign-status{width:235px; height:100%; float:left;}
+.header-top-cont .account-sign-status li{float: left; position: relative;}
+.header-top-cont .account-sign-status .account-welcome{padding:0 8px 0 0;}
+.header-top-cont .account-sign-status .account-welcome .nav-title{width:96px; height:29px; line-height:29px; padding:0 5px 0 11px;}
+.header-top-cont .account-sign-status .account-welcome .nav-title span{display: block; font-size:12px;}
+.account-signin{width:36px; height:29px; line-height:29px; padding:0 8px 0 15px; background:url(https://img.alicdn.com/tfs/TB1EV4XrAvoK1RjSZPfXXXPKFXa-12-16.png) no-repeat left ;}
+.header-top-cont .account-sign-status .account-signin a{display:block; font-size:12px; color:#555;}
+.header-top-cont .account-signup{width:48px; height:29px; line-height:29px; padding:0 8px 0 0;}
+.header-top-cont .account-signup a{display:block; font-size:12px; color:#555;}
+.header-top-cont .nav-content{display: none; width:260px; min-height:50px; padding:20px 0 26px 26px; position: absolute;}
+.header-top-cont .nav-content p{width:260px; height:20px; font-size: 14px; color:#333; line-height:20px;}
+.header-top-cont .nav-content .signin-close-box{position: absolute; right: 12px; top: 21px;width: 10px;height: 10px;cursor: pointer;background: url(https://img.alicdn.com/tfs/TB1WJ8lrhTpK1RjSZFKXXa2wXXa-12-10.png) no-repeat center;}
+.header-top-cont .nav-content .fd-clr{width:260px; height:58px;}
+.header-top-cont .nav-content ul li{float:left; width:75px;font-size:12px; margin-right:15px; padding-left:20px;color:#FF6000; background:url(https://img.alicdn.com/tfs/TB140FnrkvoK1RjSZFNXXcxMVXa-14-14.png) no-repeat left center;}
+
+.header-top-cont .topnav{float:right;}
+.header-top-cont .topnav ul li{float:left;}
+.header-top-cont .topnav ul li .nav-title{height:29px; line-height:29px; padding:0 11px 0 10px; background: url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png) no-repeat right;    background-position: right -145px;}
+.header-top-cont .topnav ul li .nav-title a{display:block; font-size:12px;}
+.header-top-cont .topnav .nav-arrow{padding:0 9px 0 0; background:url(https://cbu01.alicdn.com/cms/upload/2016/404/906/2609404_1073447813.png) right 12px  no-repeat;}
+.header-top-cont .topnav .purchaselist-value{float:right; display:block; width:15px; height: 15px;line-height:15px; margin-top:7px; margin-left:3px; margin-right: 2px; background:url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png)
+      no-repeat ; background-position: 0 0;}
+.header-top-cont .topnav .purchaselist-value em{display:block; width:9px; height:15px; padding: 0 3px; line-height:15px; background-color:#ff7300;color:#fff;margin-left: 3px; position: relative;}
+.header-top-cont .topnav  .topnav-favorite i{font-size:14px;}
+.header-top-cont .topnav  .hangye-category{padding:5px 0 0 15px;}
+.header-top-cont .topnav  .zone .name{font-size:13px; font-weight:bold; padding:8px 8px 8px 0; height: 14px;line-height: 14px;}
+.header-top-cont .topnav .zone{width:440px; padding:0 0 10px;}
+.header-top-cont .topnav .topnav-sitemap .detail{width:370px;;}
+
+#header-top .topnav .nav-content{display: none; position: absolute; top:28px; min-height:50px;  padding:5px 0 0; background: #fff; color:#555;border: solid 1px #ececec; border-top: none;  top:30px}
+#header-top .topnav-myali .nav-content {left: 0;width: 252px;  top:30px}
+#header-top .topnav-favorite .nav-content {top: 28px; min-height: 50px; width:225px; background: #fff;color: #555; border: solid 1px #ececec;border-top: none;  top:30px}
+#header-top .topnav-wsgys .nav-content {left:0; width: 88px;  top:30px}
+#header-top .topnav-kf .nav-content{left:0; width: 76px;  top:30px}
+#header-top .topnav .topnav-slsj .nav-content {width: 76px;  top:30px}
+#header-top .topnav-tp .nav-content {left:0; width: 125px;  top:30px}
+#header-top .topnav-sitemap .nav-content {width:453px; right:0; top:30px}

@@ -1,6 +1,9 @@
 
 /*一 、 @import 我们的css从此可以进行不短的拆分确保我们的程序可维护性变高*/
 @import "./reset";
+@import "./navtop";
+@import "./iconfont";
+@import "./search";
 
 /*所有的sass之中的关键字 都以 @开头*/
 
@@ -10,29 +13,18 @@
       darken(); 黑暗;
       ligthen(); 变量;
 */
-@import "./variable";
+@import "./variable"; 
 
-body{
-      background: $base-color;
-}
-#box{
-      width:100px;
-      height: 100px;
-      // background: #ddd - 100;
-      background: darken($base-color,50);
-      color: lighten($base-color , 10);
-}
+// body{
+//       background: $base-color;
+// }
+
 
 /*
    三、数组 
 */
 
-.btn{
-      background:  #ddd;
-      color: #fff;
-      border-radius: 10px;
-      border:none;
-}
+
 
 /*重复性的工作*/
 // .btn-small{
@@ -179,26 +171,26 @@ body{
 // 提取;
 @import "./mixin";
 
-#box{
-      @include abs-center;
-}
+// #box{
+//       @include abs-center;
+// }
 
-.dox{
-      width: 200px;
-      height: 100px;
-      background: antiquewhite;
-     @include  left-abs-center(200px);
-     @include c3p(transform,rotate(60deg) scale(1.5));
-}
+// .dox{
+//       width: 200px;
+//       height: 100px;
+//       background: antiquewhite;
+//      @include  left-abs-center(200px);
+//      @include c3p(transform,rotate(60deg) scale(1.5));
+// }
 
 // 七 继承 ;
 
 
-.cox{
-      @extend .dox;
+// .cox{
+//       @extend .dox;
 
-      background: #fff;
-      @include  left-abs-center(800px);
-}
+//       background: #fff;
+//       @include  left-abs-center(800px);
+// }
 
 // if 三目运算  foreach ........... 

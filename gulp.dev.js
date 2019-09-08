@@ -7,6 +7,7 @@
 
 const gulp = require("gulp");
 const connect = require("gulp-connect");
+const sourcemaps = require("gulp-sourcemaps");
 const proxy  = require("http-proxy-middleware");
 const { proxyList } = require("./config/gulp.config");
 const sass = require("gulp-sass");
@@ -54,7 +55,6 @@ function javascript(done){
       gulp.src([paths.javascript + "*.js"])
       .pipe(gulp.dest(distPaths.javascript))
       .pipe(connect.reload())
-
       done();
 }
 function html(done){
@@ -65,15 +65,17 @@ function html(done){
 }
 function css(done){
       gulp.src([paths.css + "*.css"])
-      .pipe(gulp.dest(distPaths.css))
+      .pipe(gulp.dest(distPaths.style))
       .pipe(connect.reload())
       done();
 }
 
 async function scss(){
       await gulp.src([paths.scss + "*.scss"])
+      .pipe(sourcemaps.init())
       .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest(distPaths.scss))
+      .pipe(sourcemaps.write("."))
+      .pipe(gulp.dest(distPaths.style))
       .pipe(connect.reload())
 
 }
