@@ -1,3 +1,4 @@
+@import "./mixin";
 .pc-new-box-gap{height:20px;}
 #info-list{
     height:772px;
@@ -13,7 +14,6 @@
             ul{
                 width:200px;
                 height:750px;
-                background: hotpink;
                 padding:10px 0;
                 .next-menu-item{
                     width:100%;
@@ -50,7 +50,7 @@
             width:984px;
             height:772px;
             margin:0 0 0 16px;
-            background: lightseagreen;
+            // 右边 > 上
             .box-top{
                 width:984px;
                 height:420px;
@@ -67,19 +67,148 @@
                     width:200px;
                     height:420px;
                     background: lightgrey;
+                    .login-box{
+                        width:100%;
+                        height:100px;
+                        .login-top{
+                            width:164px;
+                            height:188px;
+                            padding:21px 18px 15px;
+                            border-bottom: 1px solid #ddd;
+                            .user-one{
+                                height:41px;
+                                .user-img{
+                                    float: left;
+                                    display: block;
+                                    width:40px;
+                                    height:40px;
+                                    img{
+                                        border-radius: 40px;
+                                        width:100%;
+                                        height:100%;
+                                    }
+                                }
+                                h3{
+                                    
+                                    float: left;
+                                    margin-left: 5px;
+                                    b,a{
+                                        height:20px;
+                                        line-height: 20px;
+                                        padding:0 3px;
+                                        font-size: 12px;
+                                    }
+                                    b{
+                                        color:#333 ;
+                                    }
+                                    a{
+                                        border-radius: 9px;
+                                        color: #ff2900;
+                                        background:#FFEBE7;
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+                            .user-two{
+                                margin-top:12px;
+                                p{
+                                    width:100%;
+                                    height:30px;
+                                    margin:0 0 6px;
+                                    background: #FFEBE7;
+                                    border-radius: 2px;
+                                    a{
+                                        display: block;
+                                        width:100%;
+                                        height:100%;
+                                        text-align: center;
+                                        line-height: 30px;
+                                        color:#ff2900 ;
+                                        font-size: 14px;
+                                    }
+                                }
+                                p:last-child{
+                                    border: 1px solid #ffebe7;
+                                    background: #fff;
+                                }
+                            }
+                            .user-three{
+                                margin-top:15px;
+                                width:164px;
+                                height:55px;
+                                .three-box{
+                                    display: block;
+                                    float: left;
+                                    width: 48px;
+                                    height: 55px;
+                                    margin:0 5px 0 0;
+                                    dl{
+                                        width:100%;
+                                        height:100%;
+                                        dt{
+                                            width:48px;
+                                            height:35px;
+                                            text-align: center;
+                                            img{
+                                                width: 32px;
+                                                height: 32px;
+                                            }
+                                        }
+                                        dd{
+                                            font-size: 12px;
+                                            color:#888 ;
+                                            text-align: center;
+                                        }
+                                    }
+                                    dl:hover{
+                                        dd{
+                                            color: #ff2900;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .login-bottom{
+                            width:157px;
+                            height:172px;
+                            padding:13px 23px 9px 20px;
+                            .News_top{
+                                height:120px;
+                            }
+                        }
+                    }
 
                 }
             }
+            // 右边 > 中
             .box-middle{
                 margin-top:15px;
                 width:984px;
                 height:140px;
                 background: #555;
+                
                 .top-left{
                     float: left;
                     width:768px;
                     height:140px;
                     background: lightcyan;
+                    
+                    .icon-item{
+                        float: left;
+                        display: block;
+                        width:152px;
+                        height:140px;
+                        border-left: 1px solid #ddd;
+                        background: #fff;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                    .icon-item:first-child{
+                        margin-left: 2px;
+                        border-left: none;
+                    }
                 }
                 .top-right{
                     float: left;
@@ -87,14 +216,128 @@
                     width:200px;
                     height:140px;
                     background: lightgrey;
+                    .img-box{
+                        width:100%;
+                        height:100%;
+                        position: relative;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }
+                        .set-pos{
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            z-index: 22;
+                            display: none;
+                        }
+                    }
+                    .img-box:hover{
+                        .set-pos{
+                            display: block;
+                            left:0;
+                            top:0;
+                        }
+                    }
 
                 }
             }
+            // 右边 > 下
             .box-foot{
                 margin-top:14px;
                 width:984px;
                 height:181px;
-                background: #888
+                background: #888;
+                .card-list{
+                    height:180px;
+                    
+                    .grid{
+                        float: left;
+                        width:164px;
+                        height:90px;
+                        background: #fff;
+                        // border-right: 1px solid #ddd;
+                        border-bottom: 1px solid #ddd;
+                        a{
+                            display:block;
+                            width:163px;
+                            border-right:1px solid #ddd ;
+                            height:100%;
+                            // padding: 20px 0;
+                            position: relative;
+                            .img-cont{
+                                width:100%;
+                                height:100%;
+                                
+                                img{
+                                    width:100%;
+                                    height:100%;
+                                    position:absolute;
+                                    left: 0;
+                                    top: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    // @include abs-center;
+                                }
+                                .set-padding{
+                                    width:110px;
+                                    height:55px;
+                                }
+                            }
+                            .sub-img-box{
+                                display: none;
+                                position: absolute;
+                                width:100%;
+                                height:100%;
+                                left: 0;
+                                top:0;
+                                .set-obc{
+                                    width:100%;
+                                    height:100%;
+                                    opacity: .7;
+                                    background: #ff2900;
+                                }
+                                .box-card{
+                                    position: absolute;
+                                    top:0;
+                                    left: 0;
+                                    padding:20px 0 0;
+                                    width:100%;
+                                    height:70px;
+                                    // background:#fdd444;
+                                    .name{
+                                        height:20px;
+                                        line-height: 20px;
+                                        color: #fff;
+                                        text-align: center;
+                                        margin-bottom:10px;
+                                        font-size: 14px;
+                                    }
+                                    .btn-text{
+                                        height:20px;
+                                        line-height: 20px;
+                                        color: #fff;
+                                        text-align: center;
+                                        margin-bottom:10px;
+                                        span{
+                                            font-size: 14px;
+                                            color: fff;
+                                            padding:2px;
+                                            border:1px solid #fff;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                    .grid:hover{
+                        .sub-img-box{
+                            display: block;
+                        }
+                    }
+                }
             }
         }
         
