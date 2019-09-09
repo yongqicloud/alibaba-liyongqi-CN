@@ -618,6 +618,9 @@ input {
         height: 181px;
         background: #888; }
 
+body {
+  background: #222; }
+
 /*所有的sass之中的关键字 都以 @开头*/
 /* 二 、变量 
 
