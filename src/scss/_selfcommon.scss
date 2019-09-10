@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*css reset   重置样式*/
+*{margin:0;padding:0;}
+
+a,u{text-decoration: none; color: #000;}
+i,em{font-style: normal}
+b,strong{font-weight: normal;}
+ul,ol,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight: normal;}
+input{outline:none;}/* 去掉input聚焦时蓝色边框 */
+/* 解决浏览器bug */
+// img{ border:0;display: block;}
+/* 清除浮动 */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 文本溢出 */
+.comText{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}

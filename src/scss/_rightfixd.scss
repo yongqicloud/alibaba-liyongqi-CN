@@ -1,0 +1,93 @@
+#right-fixd{
+    position: fixed;
+    height:100%;
+    width:36px;
+    background:#ddd;
+    top: 0;
+    right:0;
+    z-index: 1000;
+    .right-fixd-cont{
+        width:100%;
+        height:100%;
+        position: relative;
+        .fixd-top{
+            width:36px;
+            height:178px;
+            background: hotpink;
+        }
+        .fixd-menu{
+            width: 36px;
+            height:416px;
+            .me,.invitation,.newest,.footprint,.msg,.headline{
+                padding:14px 0;
+                width:36px;
+                height:38px;
+                span{
+                    display: block;
+                    width:36px;
+                    height:18px;
+                    text-align: center;
+                    line-height: 18px;
+                    font-size: 18px;
+    
+                }
+                p{
+                    height:20px;
+                    line-height: 20px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #ff3700;
+                    display: none
+                }
+            }
+            .me:hover{
+                p{
+                    display: block;
+                }
+            }
+            .invitation:hover{
+                p{
+                    display: block;
+                }
+            }
+            .newest:hover{
+                p{
+                    display: block;
+                }
+            }
+            .footprint:hover{
+                p{
+                    display: block;
+                }
+            }
+            .msg:hover{
+                p{
+                    display: block;
+                }
+            }
+            .headline:hover{
+                p{
+                    display: block;
+                }
+            }
+        }
+        .fixd-menu:hover{
+            cursor: pointer;
+        }
+        .fixd-gotop{
+            position: absolute;
+            bottom: 10%;
+            width: 36px;
+            height: 36px;
+            a{
+                display:block ;
+                width: 36px;
+                height: 36px;
+                text-align: center;
+                line-height: 36px;
+                font-size: 22px
+            }
+        }
+    }
+    
+}

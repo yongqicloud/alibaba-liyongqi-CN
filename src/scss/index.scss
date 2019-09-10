@@ -2,10 +2,20 @@
 /*一 、 @import 我们的css从此可以进行不短的拆分确保我们的程序可维护性变高*/
 @import "./reset";
 @import "./common";
+@import "./selfcommon";
 @import "./navtop";
 @import "./iconfont";
 @import "./search";
 @import "./infolist";
+@import "./infocard";
+@import "./news";
+@import "./recommendlist";
+@import "./footerbootom";
+@import "./rightfixd";
+@import "./service";
+// body,html{
+//       background: #f2f2f2;
+// }
 /*所有的sass之中的关键字 都以 @开头*/
 
 /* 二 、变量 
