@@ -11,7 +11,7 @@
       background: #fff;
       padding-left: 9px;
       padding-right: 10px;}
-#header-top a:hover{color:#FF7300; text-decoration:underline #ff7300}
+#header-top a:hover{color:#FF7300; background: #fff; text-decoration:underline #ff7300}
 #header-top .account-sign-status .nav-content{position: absolute; border: solid 1px #ececec;border-top: none;}
 #header-top dl{ float: left; padding:0 8px 8px;}
 #header-top dl dt{height:29px; line-height: 29px}
@@ -22,7 +22,8 @@
 /* 首部导航栏最后一个二级菜单 */
 .header-top-cont .topnav  .zone .name, .header-top-cont .topnav .zone .detail{float: left;}
 /* 最顶部登陆 nav */
-#header-top{height:28px; border-bottom:1px solid #ddd;}
+#header-top{height:28px; border-bottom:1px solid #ddd;
+            background: #fff}
 .header-top-cont{height:29px;}
 .header-top-cont .mobile{width:48px; height:29px; color: #555; padding:0 10px 0 16px; float: left; background:url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png) no-repeat left;
      background-position:0 calc(50% - 6px);}
