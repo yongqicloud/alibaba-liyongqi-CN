@@ -3,7 +3,8 @@ module.exports = {
             "javascript" : "./src/javascripts/",
             "style" : "./src/css/",
             "html"  : "./src/",
-            "scss"  : "./src/scss/"
+            "scss"  : "./src/scss/",
+            // "module" : "./src/modules/"
       },
       proxyList : {
             "dt" : "https://www.duitang.com/napi/index/hot/",

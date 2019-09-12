@@ -370,20 +370,61 @@
             float: left;
             width: 380px;
             height: 100%;
-            background: lightgoldenrodyellow;
 
             .img-box {
                 width: 380px;
                 height: 380px;
-                background: #999;
+                position: relative;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+                .cubes{
+                    width:200px;
+                    height:200px;
+                    background: #FF7300;
+                    opacity: .4;
+                    position: absolute;
+                    z-index: 2;;
+                    left: 0;
+                    top: 0;
+                }
+                .img-big-box{
+                    display: none;
+                    width:380px;
+                    height:380px;
+                    position: absolute;
+                    right: -380px;
+                    z-index: 100;
+                    top: 0;
+                    background: #fff;
+                    overflow: hidden;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        top:0;
+                        width:200%;
+                        height:200%;
+                    }
+                }
             }
 
             .img-list {
                 width: 380px;
                 height: 62px;
                 padding: 20px 0;
+                overflow: hidden;
+                .img-list-cont {
+                    min-width:300px;
+                    padding-left: 20px;
+                    li{
+                        float: left;
+                        margin-right:8px;
+                        width:62px;
+                        height:62px;
+                    }
+                }
 
-                .img-list-cont {}
             }
 
             .goods-foot-left {
