@@ -1,4 +1,4 @@
-define(["banner","magnifier"],function(banner,magnifier){
+define(["banner","magnifier","lazyloading"],function(banner,magnifier,lazyloading){
     // $.fn.banner = function(){
     //     console.log(999);
     // }
