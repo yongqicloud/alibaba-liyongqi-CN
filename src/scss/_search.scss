@@ -1,13 +1,13 @@
 #header-search{
     
     height:73px;
-    padding:20px 0 0;
-    margin:20px 0 27px;
-    background:#f40b24;
+    padding:40px 0 0;
+    margin:0px 0 27px;
+    background:#fff;
     .header-search-cont{
         position: relative;
         height:73px;
-        background: #f40b34;
+        // background: #f40b34;
         // logo
         .logo{
             width:210px;
@@ -179,7 +179,7 @@
                 text-align: center;
                 font-weight: bold;
                 a{
-                    color: #fff;
+                    color: #222;
                 }
             }
             li:hover{

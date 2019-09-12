@@ -14,9 +14,13 @@
 @import "./rightfixd";
 @import "./service";
 @import "./details";
+@import "./regested";
+// 登陆
+@import "./login";
 body,html{
       background: #fff;
 }
+
 .body-img-box{
       position: absolute;
       z-index: 0;

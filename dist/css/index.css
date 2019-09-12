@@ -72,7 +72,11 @@ input {
 .company-cont,
 .long-navs-cont,
 .detials-body-title-cont,
-.detials-body-cont {
+.detials-body-cont,
+.login-header-cont,
+.main,
+.member-steps-cont,
+.tip-cont {
   width: 1200px;
   margin: 0 auto; }
 
@@ -116,6 +120,9 @@ input {
   text-overflow: ellipsis; }
 
 /* 公共样式 */
+body, html {
+  background: #f2f2f2; }
+
 #header-top li {
   position: relative; }
 
@@ -400,9 +407,9 @@ input {
 
 @font-face {
   font-family: "iconfont";
-  src: url("//at.alicdn.com/t/font_1388227_tld6lsojcjf.eot?t=1568022923629");
+  src: url("//at.alicdn.com/t/font_1388227_m4zzddjn4kl.eot?t=1568184358041");
   /* IE9 */
-  src: url("//at.alicdn.com/t/font_1388227_tld6lsojcjf.eot?t=1568022923629#iefix") format("embedded-opentype"), url("data:application/x-font-woff2;charset=utf-8;base64,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") format("woff2"), url("//at.alicdn.com/t/font_1388227_tld6lsojcjf.woff?t=1568022923629") format("woff"), url("//at.alicdn.com/t/font_1388227_tld6lsojcjf.ttf?t=1568022923629") format("truetype"), url("//at.alicdn.com/t/font_1388227_tld6lsojcjf.svg?t=1568022923629#iconfont") format("svg");
+  src: url("//at.alicdn.com/t/font_1388227_m4zzddjn4kl.eot?t=1568184358041#iefix") format("embedded-opentype"), url("data:application/x-font-woff2;charset=utf-8;base64,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") format("woff2"), url("//at.alicdn.com/t/font_1388227_m4zzddjn4kl.woff?t=1568184358041") format("woff"), url("//at.alicdn.com/t/font_1388227_m4zzddjn4kl.ttf?t=1568184358041") format("truetype"), url("//at.alicdn.com/t/font_1388227_m4zzddjn4kl.svg?t=1568184358041#iconfont") format("svg");
   /* iOS 4.1- */ }
 
 .iconfont {
@@ -411,6 +418,9 @@ input {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-lock:before {
+  content: "\e69e"; }
 
 .icon-cc-card:before {
   content: "\e6c5"; }
@@ -421,7 +431,7 @@ input {
 .icon-gift:before {
   content: "\e691"; }
 
-.icon-me:before {
+.icon-extong-me:before {
   content: "\e60d"; }
 
 .icon-phone:before {
@@ -439,6 +449,9 @@ input {
 .icon-note:before {
   content: "\e6ad"; }
 
+.icon-unie603:before {
+  content: "\e600"; }
+
 .icon-denglong:before {
   content: "\e601"; }
 
@@ -448,8 +461,17 @@ input {
 .icon-go-top:before {
   content: "\e610"; }
 
+.icon-gongsi:before {
+  content: "\e625"; }
+
 .icon-shoucang2:before {
   content: "\e613"; }
+
+.icon-erweima:before {
+  content: "\e629"; }
+
+.icon-dunpai:before {
+  content: "\e6f6"; }
 
 .icon-zuji:before {
   content: "\e65d"; }
@@ -465,13 +487,12 @@ input {
 
 #header-search {
   height: 73px;
-  padding: 20px 0 0;
-  margin: 20px 0 27px;
-  background: #f40b24; }
+  padding: 40px 0 0;
+  margin: 0px 0 27px;
+  background: #fff; }
   #header-search .header-search-cont {
     position: relative;
-    height: 73px;
-    background: #f40b34; }
+    height: 73px; }
     #header-search .header-search-cont .logo {
       width: 210px;
       height: 92px;
@@ -606,7 +627,7 @@ input {
       text-align: center;
       font-weight: bold; }
       #header-nav .header-nav-cont ul li a {
-        color: #fff; }
+        color: #222; }
     #header-nav .header-nav-cont ul li:hover {
       background: #ffbc1c; }
       #header-nav .header-nav-cont ul li:hover a {
@@ -1092,10 +1113,15 @@ input {
               border: 1px solid #888; }
               #new-huopin .new-huopin-cont .huopin-baopin-box .huopin-offer-list li a .offer-img-box .huopin_pank, #new-huopin .new-huopin-cont .huopin-temai-box .huopin-offer-list li a .offer-img-box .huopin_pank {
                 width: 174px;
-                height: 174px; }
+                height: 174px;
+                overflow: hidden; }
                 #new-huopin .new-huopin-cont .huopin-baopin-box .huopin-offer-list li a .offer-img-box .huopin_pank img, #new-huopin .new-huopin-cont .huopin-temai-box .huopin-offer-list li a .offer-img-box .huopin_pank img {
                   width: 100%;
-                  height: 100%; }
+                  height: 100%;
+                  -webkit-transform-origin: 0 0;
+                  transition: all 0.5s; }
+                #new-huopin .new-huopin-cont .huopin-baopin-box .huopin-offer-list li a .offer-img-box .huopin_pank img:hover, #new-huopin .new-huopin-cont .huopin-temai-box .huopin-offer-list li a .offer-img-box .huopin_pank img:hover {
+                  transform: scale(1.2); }
             #new-huopin .new-huopin-cont .huopin-baopin-box .huopin-offer-list li a .offer-title:hover span, #new-huopin .new-huopin-cont .huopin-temai-box .huopin-offer-list li a .offer-title:hover span {
               color: #FF2900; }
             #new-huopin .new-huopin-cont .huopin-baopin-box .huopin-offer-list li a .offer-title, #new-huopin .new-huopin-cont .huopin-temai-box .huopin-offer-list li a .offer-title {
@@ -1183,14 +1209,19 @@ input {
         width: 276px;
         height: 276px;
         margin-right: 18px; }
+        #new-live .new-live-cont .card-box .card .img-box:hover .cover-img {
+          transform: scale(1.2); }
         #new-live .new-live-cont .card-box .card .img-box {
           position: relative;
           display: block;
           width: 276px;
-          height: 240px; }
+          height: 240px;
+          overflow: hidden; }
           #new-live .new-live-cont .card-box .card .img-box .cover-img {
             width: 100%;
-            height: 100%; }
+            height: 100%;
+            -webkit-transform-origin: 0 0;
+            transition: all 0.4s; }
           #new-live .new-live-cont .card-box .card .img-box .img-mask {
             position: absolute;
             top: 0;
@@ -1424,10 +1455,15 @@ input {
         height: 100%; }
         #rec-offer-list .rec-offer-list-cont .box-item .box-link .img-box {
           width: 214px;
-          height: 214px; }
+          height: 214px;
+          overflow: hidden; }
           #rec-offer-list .rec-offer-list-cont .box-item .box-link .img-box img {
             width: 100%;
-            height: 100%; }
+            height: 100%;
+            -webkit-transform-origin: 0 0;
+            transition: all 0.2s; }
+        #rec-offer-list .rec-offer-list-cont .box-item .box-link .img-box:hover img {
+          transform: scale(1.05); }
         #rec-offer-list .rec-offer-list-cont .box-item .box-link .goods-box {
           width: 194px;
           height: 89px;
@@ -1601,7 +1637,8 @@ input {
       margin-right: 16px; }
 
 #service .service-cont {
-  height: 180px; }
+  height: 180px;
+  background: #fff; }
   #service .service-cont ul {
     width: 100%;
     height: 100%; }
@@ -1883,16 +1920,52 @@ input {
     #detials-body .detials-body-cont .goods-box {
       float: left;
       width: 380px;
-      height: 100%;
-      background: lightgoldenrodyellow; }
+      height: 100%; }
       #detials-body .detials-body-cont .goods-box .img-box {
         width: 380px;
         height: 380px;
-        background: #999; }
+        position: relative; }
+        #detials-body .detials-body-cont .goods-box .img-box img {
+          width: 100%;
+          height: 100%; }
+        #detials-body .detials-body-cont .goods-box .img-box .cubes {
+          width: 200px;
+          height: 200px;
+          background: #FF7300;
+          opacity: .4;
+          position: absolute;
+          z-index: 2;
+          left: 0;
+          top: 0; }
+        #detials-body .detials-body-cont .goods-box .img-box .img-big-box {
+          display: none;
+          width: 380px;
+          height: 380px;
+          position: absolute;
+          right: -380px;
+          z-index: 100;
+          top: 0;
+          background: #fff;
+          overflow: hidden; }
+          #detials-body .detials-body-cont .goods-box .img-box .img-big-box img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200%;
+            height: 200%; }
       #detials-body .detials-body-cont .goods-box .img-list {
         width: 380px;
         height: 62px;
-        padding: 20px 0; }
+        padding: 20px 0;
+        overflow: hidden; }
+        #detials-body .detials-body-cont .goods-box .img-list .img-list-cont {
+          min-width: 300px;
+          padding-left: 20px; }
+          #detials-body .detials-body-cont .goods-box .img-list .img-list-cont li {
+            float: left;
+            margin-right: 8px;
+            width: 62px;
+            height: 62px; }
       #detials-body .detials-body-cont .goods-box .goods-foot-left {
         float: left;
         width: 130px;
@@ -2284,6 +2357,387 @@ input {
         width: 100px;
         height: 20px;
         background: lightblue; }
+
+#member-steps {
+  height: 47px;
+  margin-bottom: 10px; }
+  #member-steps .member-steps-cont {
+    height: 47px;
+    background: #fff; }
+    #member-steps .member-steps-cont ul {
+      height: 47px;
+      width: 480px;
+      margin: auto; }
+      #member-steps .member-steps-cont ul a {
+        display: block;
+        float: left;
+        width: 170px;
+        height: 46px;
+        line-height: 46px;
+        padding-left: 70px; }
+        #member-steps .member-steps-cont ul a li {
+          color: #222;
+          font-weight: bold; }
+      #member-steps .member-steps-cont ul a:last-child {
+        border-bottom: 2px solid #ff0000; }
+        #member-steps .member-steps-cont ul a:last-child li {
+          color: #ff6000; }
+
+#tip {
+  height: 18px;
+  margin-bottom: 20px; }
+  #tip .tip-cont {
+    height: 18px;
+    line-height: 18px;
+    background: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px; }
+
+#regest {
+  height: 398px; }
+  #regest .reg-main {
+    width: 720px;
+    height: 398px;
+    margin: 0 auto;
+    position: relative; }
+    #regest .reg-main .form-cont {
+      width: 720px;
+      min-height: 398px; }
+      #regest .reg-main .form-cont .next-form-item {
+        width: 100%;
+        height: 44px;
+        margin-bottom: 16px; }
+        #regest .reg-main .form-cont .next-form-item label {
+          float: left;
+          display: block;
+          width: 240px;
+          height: 100%;
+          line-height: 44px;
+          font-size: 12px;
+          color: #666;
+          padding-right: 12px;
+          text-align: right; }
+        #regest .reg-main .form-cont .next-form-item .input-box {
+          float: left;
+          width: 300px;
+          height: 44px; }
+          #regest .reg-main .form-cont .next-form-item .input-box .next-input-group {
+            display: block;
+            width: calc(100% - 2px);
+            height: 38px;
+            border: 1px solid #ddd; }
+            #regest .reg-main .form-cont .next-form-item .input-box .next-input-group input {
+              width: calc(100% - 24px);
+              height: 100%;
+              border: none;
+              outline: none;
+              padding: 0 12px; }
+          #regest .reg-main .form-cont .next-form-item .input-box .form-item-tips {
+            margin-top: 3px;
+            font-size: 12px;
+            color: #ff6000; }
+          #regest .reg-main .form-cont .next-form-item .input-box .readme {
+            border: none;
+            height: 36px; }
+            #regest .reg-main .form-cont .next-form-item .input-box .readme em {
+              float: left;
+              display: block;
+              width: 16px;
+              height: 16px;
+              border: 1px solid #ddd; }
+              #regest .reg-main .form-cont .next-form-item .input-box .readme em input {
+                width: 16px;
+                height: 16px;
+                border: none;
+                padding: 0;
+                background: transparent; }
+            #regest .reg-main .form-cont .next-form-item .input-box .readme .readme-right {
+              float: left;
+              width: 275px;
+              height: 36px; }
+              #regest .reg-main .form-cont .next-form-item .input-box .readme .readme-right p {
+                line-height: 18px;
+                font-size: 12px;
+                color: #333; }
+                #regest .reg-main .form-cont .next-form-item .input-box .readme .readme-right p a {
+                  color: #ff0000; }
+      #regest .reg-main .form-cont .last-item {
+        margin: 0; }
+      #regest .reg-main .form-cont .agree {
+        width: 470px;
+        padding-left: 230px;
+        height: 18px;
+        line-height: 18px;
+        margin-bottom: 10px; }
+        #regest .reg-main .form-cont .agree span {
+          font-size: 12px;
+          color: #ff7000; }
+    #regest .reg-main .btn-box {
+      height: 42px;
+      width: 100%;
+      text-align: center; }
+      #regest .reg-main .btn-box button {
+        height: 42px;
+        width: 120px;
+        color: #fff;
+        border: none;
+        background: #ff6000; }
+      #regest .reg-main .btn-box button:hover {
+        background: #ff0000; }
+    #regest .reg-main .reg-help {
+      border: 1px solid #DDDDDD;
+      padding: 20px 20px 0 20px;
+      width: 140px;
+      height: 250px;
+      position: absolute;
+      right: -150px;
+      top: 20px;
+      border: 1px solid #ddd; }
+      #regest .reg-main .reg-help h3 {
+        font-weight: bold;
+        font-size: 16px; }
+      #regest .reg-main .reg-help ul li {
+        border-bottom: 1px solid #DDDDDD;
+        height: 16px;
+        padding: 8px 0; }
+        #regest .reg-main .reg-help ul li a {
+          font-size: 12px;
+          color: #888; }
+
+.set-space {
+  height: 300px;
+  width: 100%; }
+
+body, html {
+  background: #fff; }
+
+#login-header .login-header-cont {
+  width: 1192px;
+  height: 49px;
+  padding: 12px 4px; }
+  #login-header .login-header-cont h1 {
+    height: 47px;
+    line-height: 47px;
+    width: 300px; }
+    #login-header .login-header-cont h1 .set-logo-bg {
+      float: left;
+      display: block;
+      width: 153px;
+      height: 37px;
+      padding: 4px;
+      margin: 4px 12px 0 0;
+      background: url(https://login.1688.com/img/logo.png) 50px 3px no-repeat;
+      border: 1px solid;
+      border-color: transparent; }
+    #login-header .login-header-cont h1 .set-logo-bg:hover {
+      border-color: #ddd; }
+    #login-header .login-header-cont h1 i {
+      float: left;
+      height: 20px;
+      width: 0;
+      margin-top: 15px;
+      border-left: 1px solid #ddd; }
+    #login-header .login-header-cont h1 .set-logo-font {
+      float: left;
+      width: 84px;
+      height: 49px;
+      line-height: 49px;
+      font-size: 20px;
+      font-weight: bold;
+      padding-left: 12px; }
+
+#content {
+  height: 580px;
+  padding: 12px 0 0; }
+  #content .main {
+    height: 500px; }
+    #content .main .img-box {
+      width: 578px;
+      height: 350px;
+      float: left; }
+      #content .main .img-box a {
+        display: block;
+        width: 578px;
+        height: 348px; }
+        #content .main .img-box a img {
+          width: 100%;
+          height: 100%; }
+    #content .main .login-cont {
+      float: left;
+      width: 362px;
+      height: 400px;
+      margin-left: 90px;
+      padding: 0 76px; }
+      #content .main .login-cont h2 {
+        width: 362px;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+        color: #f27800;
+        border: 1px solid #e7d3ac;
+        background: #fffbdd url(https://cbu01.alicdn.com/cms/upload/2013/012/178/1871210_1844408615.png) no-repeat left center;
+        background-position: 12px 8px; }
+      #content .main .login-cont .login-box {
+        width: 300px;
+        height: 256px;
+        margin-top: 20px;
+        padding: 28px 31px;
+        border: 1px solid #ddd;
+        position: relative; }
+        #content .main .login-cont .login-box .login-tip {
+          width: 112px;
+          height: 16px;
+          line-height: 16px;
+          position: absolute;
+          font-size: 12px;
+          color: #df9c1f;
+          top: 5px;
+          right: 58px;
+          border: 1px solid #f27800;
+          padding: 5px 20px 5px 10px;
+          background: lightgoldenrodyellow; }
+        #content .main .login-cont .login-box .login-switch {
+          width: 52px;
+          height: 52px;
+          line-height: 52px;
+          position: absolute;
+          right: 5px;
+          top: 8px; }
+          #content .main .login-cont .login-box .login-switch i {
+            font-size: 50px;
+            color: #f52800; }
+          #content .main .login-cont .login-box .login-switch span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border: 26px solid #fff; }
+        #content .main .login-cont .login-box .login-title {
+          width: 100%;
+          height: 18px;
+          padding: 0 0 8px;
+          margin: 8px 0 0;
+          font-size: 16px;
+          color: #666;
+          font-weight: bold; }
+        #content .main .login-cont .login-box .input-box {
+          width: 300px;
+          height: 210px; }
+          #content .main .login-cont .login-box .input-box .username, #content .main .login-cont .login-box .input-box .password {
+            width: 100%;
+            height: 42px;
+            margin-top: 20px;
+            position: relative;
+            border: 1px solid #ddd; }
+            #content .main .login-cont .login-box .input-box .username label, #content .main .login-cont .login-box .input-box .password label {
+              position: absolute;
+              left: 0;
+              top: 0;
+              display: block;
+              width: 40px;
+              height: 42px;
+              line-height: 40px;
+              text-align: center;
+              background: #ddd; }
+              #content .main .login-cont .login-box .input-box .username label i, #content .main .login-cont .login-box .input-box .password label i {
+                font-size: 22px;
+                color: #fff; }
+            #content .main .login-cont .login-box .input-box .username input, #content .main .login-cont .login-box .input-box .password input {
+              height: 18px;
+              border: none;
+              width: 240px;
+              font-size: 14px;
+              line-height: 18px;
+              padding: 11px 8px 11px 50px; }
+          #content .main .login-cont .login-box .input-box h4 {
+            height: 15px;
+            width: 100%; }
+          #content .main .login-cont .login-box .input-box .btn {
+            width: 100%;
+            height: 40px;
+            background: #ff4400;
+            border: none;
+            color: #fff; }
+          #content .main .login-cont .login-box .input-box .btn:hover {
+            background: #f52800; }
+          #content .main .login-cont .login-box .input-box .login-link {
+            width: 100%;
+            height: 18px;
+            line-height: 18px;
+            margin-top: 30px; }
+            #content .main .login-cont .login-box .input-box .login-link a {
+              color: #6c6c6c;
+              font-size: 12px;
+              float: right;
+              margin: 0 5px; }
+            #content .main .login-cont .login-box .input-box .login-link a:hover {
+              color: #f27800; }
+  #content .buttom-tips {
+    width: 950px;
+    margin: 0 auto;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px; }
+    #content .buttom-tips a {
+      color: #666; }
+    #content .buttom-tips p {
+      float: left;
+      padding-left: 20px; }
+    #content .buttom-tips .fs2 {
+      background: url(https://login.1688.com/img/sprite.png?1358995551841) no-repeat scroll 0 0 transparent;
+      background-position: 0 -300px; }
+    #content .buttom-tips .fs3 {
+      float: right;
+      background: url(https://login.1688.com/img/suggest.png) no-repeat no-repeat scroll 0 0; }
+      #content .buttom-tips .fs3 a {
+        color: #0461af; }
+    #content .buttom-tips a:hover {
+      color: #f52800; }
+  #content .fs-up {
+    margin-top: 20px;
+    width: 930px;
+    padding-left: 20px;
+    background: url(https://cbu01.alicdn.com/cms/upload/member/power1616.png) no-repeat scroll 0 1px; }
+
+#foot {
+  height: 74px; }
+  #foot .foot-cont {
+    width: 1000px;
+    height: 74px;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    border-top: 3px solid #df9c1f; }
+    #foot .foot-cont .ali-pages {
+      width: 100%;
+      height: 18px;
+      line-height: 18px;
+      padding: 8px 0;
+      text-align: center; }
+      #foot .foot-cont .ali-pages span {
+        color: #999;
+        font-size: 12px; }
+      #foot .foot-cont .ali-pages em {
+        width: 1px;
+        font-size: 12px; }
+      #foot .foot-cont .ali-pages a {
+        color: #333;
+        font-size: 12px; }
+      #foot .foot-cont .ali-pages a:hover {
+        color: #f52800; }
+    #foot .foot-cont .foot-pages {
+      padding: 0 15px;
+      height: 36px;
+      line-height: 18px;
+      text-align: center;
+      font-size: 12px;
+      color: #555; }
+      #foot .foot-cont .foot-pages a:hover {
+        color: #f52800; }
 
 body, html {
   background: #fff; }

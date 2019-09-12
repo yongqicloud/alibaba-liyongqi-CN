@@ -1821,9 +1821,16 @@
                   </div>
             </div>
       </div>
-      <div class="body-img-box">
+      <!-- <div class="body-img-box">
             <img class="body-img" src="https://img.alicdn.com/tfs/TB17Suxfoz1gK0jSZLeXXb9kVXa-2000-1267.png" alt="">
-      </div>
-</body>
+      </div> -->
 
+      <script src="./javascripts/require.js"></script>
+      <script>
+            require(["./javascripts/require.config.js"],function(){
+                  require(["./javascripts/index"]);
+            })
+      </script>
+</body>
 </html>
+<!-- <script src="./javascripts/index.js"></script> -->

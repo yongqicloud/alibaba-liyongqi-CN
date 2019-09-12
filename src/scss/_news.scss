@@ -71,9 +71,15 @@
                             .huopin_pank{
                                 width:174px;
                                 height:174px;
+                                overflow: hidden;
                                 img{
                                     width:100%;
                                     height:100%;
+                                    -webkit-transform-origin:0 0;
+                                    transition: all 0.5s;
+                                }
+                                img:hover{
+                                    transform: scale(1.2);
                                 }
                             }
                             
@@ -208,15 +214,26 @@
                 margin-right: 18px;
                 
                 // a标签
+                .img-box:hover{
+                    .cover-img{
+                        transform: scale(1.2);
+                    }
+                }
                 .img-box{
                     position: relative;
                     display: block;
                     width:276px;
                     height:240px;
+                    overflow: hidden;
                     .cover-img{
                         width:100%;
                         height:100%;
+                        -webkit-transform-origin:0 0;
+                        transition: all 0.4s;
                     }
+                    // .cover-img:hover{
+                    //     transform: scale(1.2);
+                    // }
                     .img-mask{
                         position: absolute;
                         top: 0;
