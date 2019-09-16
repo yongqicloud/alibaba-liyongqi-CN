@@ -1,8 +1,9 @@
-define(["banner","magnifier","lazyloading"],function(banner,magnifier,lazyloading){
+define(["banner","magnifier","lazyloading","goback"],function(banner,magnifier,lazyloading){
     // $.fn.banner = function(){
     //     console.log(999);
     // }
-    // $(".go-back").goback();
+    $(".fixd-gotop").goback();
+
     // $(".sub-menu").subMenu();
 
 })

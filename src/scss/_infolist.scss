@@ -19,6 +19,7 @@
                 .next-menu-item{
                     width:100%;
                     height: 50px;
+                    position: relative;
                     .next-menu-item-inner{
                         height:50px;
                         .c-menu{
@@ -40,6 +41,21 @@
                                     margin:0 10px 0 0;
                                 }
                             }
+                        }
+                    }
+                    .sub-menu{
+                        left:200px;
+                        top :0;
+                        position: absolute;
+                        width:680px;
+                        height:476px;
+                        padding:22px 48px;
+                        background: lightblue;
+                        z-index: 9999;
+                        h2{
+                            float: left;
+                            height:36px;
+                            width:64px;
                         }
                     }
                 }

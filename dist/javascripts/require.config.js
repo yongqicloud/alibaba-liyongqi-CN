@@ -5,6 +5,7 @@ requirejs.config({
           "banner"      :  "./javascripts/banner",
           "magnifier"   :  "./javascripts/magnifier",
           "lazyloading" :  "./javascripts/lazyloading",
+          "goback" :  "./javascripts/goback",
           // "goback" : "./goback",
           // "submenu" : "./submenu",
     }
