@@ -32,7 +32,7 @@ console.log("倒计时")
     }
     // console.log(countDown("2019/08/07"));
     setInterval(function () {
-        var str = countDown("2019/10/01","date");
+        var str = countDown("2019/09/30","date");
         
         // console.log(str);
         $("li" , ".logo").eq(0).html(
@@ -55,8 +55,6 @@ console.log("倒计时")
                 (str[1] % 24).toString().substr(1,1)
             )
         }
-        
-
         if(str[2] < 10){
             $("li" , ".logo").eq(3).html(
                 // str[2].toString().substr(0,1)
