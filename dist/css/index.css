@@ -236,6 +236,14 @@ body, html {
   line-height: 29px;
   padding: 0 5px 0 11px; }
 
+.header-top-cont .account-sign-status .account-welcome .nav-title .set-login-color {
+  color: #FF3700;
+  text-decoration: underline; }
+
+.header-top-cont .account-sign-status .account-welcome .nav-title .set-login-color:hover {
+  color: #ff2900;
+  cursor: pointer; }
+
 .header-top-cont .account-sign-status .account-welcome .nav-title span {
   display: block;
   font-size: 12px; }
@@ -257,6 +265,13 @@ body, html {
   height: 29px;
   line-height: 29px;
   padding: 0 8px 0 0; }
+
+.header-top-cont .account-signup .signout-btn {
+  color: #FF3700;
+  text-decoration: underline; }
+
+.header-top-cont .account-signup .signout-btn:hover {
+  cursor: pointer; }
 
 .header-top-cont .account-signup a {
   display: block;
@@ -2137,14 +2152,13 @@ body, html {
   position: relative; }
   #company-name .company-cont {
     min-height: 90px;
-    background: #fff; }
+    background: #fff;
+    overflow: hidden;
+    position: relative; }
     #company-name .company-cont img {
       position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto; }
+      left: -350px;
+      top: 0; }
 
 #long-navs {
   height: 30px;
@@ -2267,8 +2281,11 @@ body, html {
           #detials-body .detials-body-cont .goods-box .img-list .img-list-cont li {
             float: left;
             margin-right: 8px;
-            width: 62px;
-            height: 62px; }
+            width: 60px;
+            height: 60px;
+            border: 1px solid #888; }
+          #detials-body .detials-body-cont .goods-box .img-list .img-list-cont li:first-child {
+            border-color: #FF5008; }
       #detials-body .detials-body-cont .goods-box .goods-foot-left {
         float: left;
         width: 130px;

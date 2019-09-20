@@ -24,7 +24,7 @@
             })
             .then(function (res) {
                   // console.log(res);
-                  console.log(res.data);
+                  // console.log(res.data);
                   // 获取列表信息
                   var $data = res.data.products;
                   // console.log($data);
@@ -68,7 +68,6 @@
                         var e = evt || event;
                         e.preventDefault();
                         location.href = "http://localhost:8888/details.html";
-                        alert();
                   })
             })
       // function lazyLoad(selector){

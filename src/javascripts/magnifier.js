@@ -110,5 +110,14 @@
       }
       var magnifier = new Magnifier()
       magnifier.init()
+      $(".btn").on("click",function(){
+            $(this).siblings().css({
+                  border: "1px solid #888"
+            })
+            $(this).css({
+                  border: "1px solid #ff2900"
+            })
+            
+      })
 
 })
