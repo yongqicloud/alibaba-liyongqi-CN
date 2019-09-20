@@ -13,8 +13,12 @@
         this.on("click",function(){
             // console.log(111);
             // 面向过程方法
-            document.body.scrollTop = 0 ;
-            document.documentElement.scrollTop = 0;
+            
+            // document.body.scrollTop = 0 ;
+            // document.documentElement.scrollTop = 0;
+            $("body,html").animate({
+                scrollTop : 0
+            },1000)
         })
     }
 })

@@ -1,4 +1,5 @@
-define(["banner","magnifier","lazyloading","goback"],function(banner,magnifier,lazyloading){
+define(["swiperbanner","lazyloading","goback","tabcard","submenu","setcookie"],
+function(swiperbanner,lazyloading,goback,tabcard,submenu,setcookie){
     // $.fn.banner = function(){
     //     console.log(999);
     // }

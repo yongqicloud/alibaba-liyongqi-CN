@@ -1,0 +1,3 @@
+define(["validated"],function(validated){
+    
+})

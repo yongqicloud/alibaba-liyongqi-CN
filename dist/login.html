@@ -48,7 +48,7 @@
                         </div>
                         <div class="password">
                             <label for="psw"><i class="iconfont icon-lock"></i></label>
-                            <input type="text" id="psw" placeholder="" autofocus>
+                            <input type="password" id="psw" placeholder="" autofocus>
                         </div>
                         <h4></h4>
                         <button class="btn">登陆</button>
@@ -137,6 +137,11 @@
             </p>
         </div>
     </div>
-    
+    <script src="./javascripts/require.js"></script>
+    <script>
+          require(["./javascripts/require.config.js"], function () {
+                  require(["./javascripts/signin"]);
+            })
+    </script>
 </body>
 </html>

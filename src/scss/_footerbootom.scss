@@ -22,6 +22,8 @@
             height:206px;
             .hd{
                 margin-top: 10px;
+                height:18px;
+                line-height: 18px;
                 padding:0 3px;
                 .title{
                     font-size: 12px;
@@ -34,10 +36,10 @@
             .hd:first-child{
                 margin-top:0;
             }
-            .main{
+            .main-foot{
                 margin-top:10px;
             }
-            .main,.ft{
+            .main-foot,.ft{
                 height:24px;
                 line-height: 24px;
                 
@@ -55,9 +57,41 @@
                 }
             }
             .cert{
-                height:20px;
+                height:30px;
                 margin-top: 5px;
-                
+                a{
+                    float: left;
+                    display: block;
+                    width:73px;
+                    height:100%;
+                    margin-right: 5px;
+                    
+                }
+                .cert_1{
+                    width:73px;
+                    background: url(https://img.alicdn.com/tfs/TB1cvJIcAT2gK0jSZPcXXcKkpXa-826-226.png);
+                    background-position: 0 0;
+                }
+                .cert_3{
+                    width:73px;
+                    background: url(https://img.alicdn.com/tfs/TB1cvJIcAT2gK0jSZPcXXcKkpXa-826-226.png);
+                    background-position: -175px 0;
+                }
+                .cert_5{
+                    width:85px;
+                    background: url(https://img.alicdn.com/tfs/TB1cvJIcAT2gK0jSZPcXXcKkpXa-826-226.png);
+                    background-position: -334px 0;
+                }
+                .cert_7{
+                    width:171px;
+                    background: url(https://img.alicdn.com/tfs/TB1cvJIcAT2gK0jSZPcXXcKkpXa-826-226.png);
+                    background-position: -535px 0;
+                }
+                .cert_9{
+                    width:111px;
+                    background: url(https://img.alicdn.com/tfs/TB1cvJIcAT2gK0jSZPcXXcKkpXa-826-226.png);
+                    background-position: -715px 0;
+                }
             }
         }
     }

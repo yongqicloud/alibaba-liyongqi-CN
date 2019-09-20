@@ -4,6 +4,7 @@
     padding:40px 0 0;
     margin:0px 0 27px;
     background:#fff;
+    background: linear-gradient( #f40b24, #F52718);
     .header-search-cont{
         position: relative;
         height:73px;
@@ -36,16 +37,20 @@
             position: relative;
             width: 768px;
             margin-left: 216px;
-            .world{
-                width: 36px;
-                height: 37px;
-                position: absolute;
-                left: 4px;
-                top: 4px;
+            .search-father{
+                height:40px;
             }
             .next-search{
                 width:768px;
                 height:44px;
+                position: relative;
+                .world{
+                    width: 36px;
+                    height: 37px;
+                    position: absolute;
+                    left: 4px;
+                    top: 4px;
+                }
                 .next-input-group{
                     display: inline-table;
                     border-collapse: separate;
@@ -74,6 +79,7 @@
                                     height:40px;
                                     line-height: 40px;
                                     background: #fff;
+                                    position: relative;
                                     .input-msg-val{
                                         color:#222;
                                         font-size: 14px;
@@ -85,6 +91,30 @@
                                         padding:0 10px 0 0;
                                         
                                     }
+                                    .sub-menu{
+                                        display: none;
+                                        position: absolute;
+                                        right:0;
+                                        top:40px;
+                                        width:106px;
+                                        height:128px;
+                                        padding:8px 0;
+                                        background: #fff;
+                                        border: 2px solid #ff2900;
+                                        z-index: 10000;
+                                        li{
+                                            width:68px;
+                                            height:32px;
+                                            line-height: 32px;
+                                            padding:0 20px;
+                                            a{
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .input-msg:hover{
+                                    cursor: pointer;
                                 }
                                 .input-border{
                                     widows: 1px;
@@ -98,11 +128,81 @@
                             .next-medium{
                                 width:513px;
                                 height:40px;
+                                position: relative;
                                 input{
                                     width:460px;
                                     height:40px;
                                     border: none;
                                     padding: 0 45px 0 8px;
+                                }
+                                .sub-menu{
+                                    display: none;
+                                    position: absolute;
+                                    z-index: 10000;
+                                    left: 0;
+                                    top:40px;
+                                    width:449px;
+                                    height:200px;
+                                    padding:15px 30px 30px;
+                                    border: 2px solid #ff2900;
+                                    background: #fff;
+                                    .searched-words{
+                                        width:100%;
+                                        height:84px;
+                                        margin-bottom: 10px;    
+                                        h1{
+                                            width:100%;
+                                            height:36px;
+                                            line-height: 36px;
+                                            font-size: 12px;
+                                            color: #999;
+                                            margin-bottom: 10px;
+    
+                                        }
+                                        .keywords-body{
+                                            width:100%;
+                                            height:38px;
+                                            .words-searched{
+                                                display: inline-block;
+                                                height:28px;
+                                                line-height: 28px;
+                                                text-align: center;
+                                                color: #ff2900;
+                                                font-size: 12px;
+                                                padding:0 15px;
+                                                margin:0 10px 10px 0;
+                                                background: #f6f6f6;
+                                                border:  1px solid #e5e5e5;
+                                            }
+                                        }
+                                    }
+                                    h2{
+                                        width:100%;
+                                        height:36px;
+                                        line-height: 36px;
+                                        font-size: 12px;
+                                        color: #999;
+                                        margin-bottom: 10px;
+                                    }
+                                    .keywords-body-down{
+                                        min-height:60px;
+                                        line-height: 30px;
+                                        .link-words{
+                                            // display: inline-block;
+                                            float: left;
+                                            font-size: 12px;
+                                            height:12px;
+                                            padding:0 15px 0 0;
+                                            margin-bottom: 15px;
+
+                                        }
+                                    }
+                                    .search-rank{
+                                        font-size: 12px;
+                                        position: absolute;
+                                        right:30px;
+                                        bottom: 30px;
+                                    }
                                 }
                             }
                             
@@ -179,7 +279,7 @@
                 text-align: center;
                 font-weight: bold;
                 a{
-                    color: #222;
+                    color: #fff;
                 }
             }
             li:hover{

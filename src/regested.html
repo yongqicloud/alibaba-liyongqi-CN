@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="regested-html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+<body class="regested-body">
         <div id="header-top">
                 <div class="header-top-cont">
                       <!-- 1、左侧图标 -->
@@ -269,7 +269,7 @@
                         <label for="username">会员名</label>
                         <div class="input-box">
                             <span class="next-input-group">
-                                <input id="username" type="text" required="required">
+                                <input id="username" type="text" required="required" value="liyongqi">
                             </span>
                             <div class="form-item-tips"></div>
                         </div>
@@ -278,7 +278,7 @@
                         <label for="psw">登录密码</label>
                         <div class="input-box">
                             <span class="next-input-group">
-                                <input id="psw" type="text">
+                                <input id="psw" type="password" value="123456" >
                             </span>
                             <div class="form-item-tips"></div>
                         </div>
@@ -287,7 +287,7 @@
                         <label for="psw1">密码确认</label>
                         <div class="input-box">
                             <span class="next-input-group">
-                                <input id="psw1" type="text">
+                                <input id="psw1" type="password" value="123456">
                             </span>
                             <div class="form-item-tips"></div>
                         </div>
@@ -296,7 +296,7 @@
                         <label for="phone-num">手机号码</label>
                         <div class="input-box">
                             <span class="next-input-group">
-                                <input id="phone-num"" type="text">
+                                <input id="phone-num"" type="text" value="13673632712">
                             </span>
                             <div class="form-item-tips"></div>
                         </div>
@@ -306,7 +306,8 @@
                         <div class="input-box">
                             <span class="next-input-group readme">
                                 <em class="choice-me">
-                                    <input type="text">
+                                    <input type="checkbox" value = "false" class="click-me">
+                                    <!-- <b>✔</b> -->
                                 </em>
                                 <div class="readme-right">
                                     <p>创建网站账号的同时，我同意遵守：</p>
@@ -323,7 +324,7 @@
                        <span>请勾选用户协议</span>
                     </div>
                     <div class="btn-box">
-                        <button>
+                        <button class="signin">
                             同意并注册
                         </button>
                     </div>
@@ -410,6 +411,11 @@
                 </div>
         </div>
         
-    
+    <script src="./javascripts/require.js"></script>
+    <script>
+          require(["./javascripts/require.config.js"], function () {
+                  require(["./javascripts/validated"]);
+            })
+    </script>
 </body>
 </html>

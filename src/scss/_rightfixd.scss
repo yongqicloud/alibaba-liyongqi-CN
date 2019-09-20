@@ -13,7 +13,7 @@
         .fixd-top{
             width:36px;
             height:178px;
-            background: hotpink;
+            // background: hotpink;
         }
         .fixd-menu{
             width: 36px;
@@ -36,43 +36,56 @@
                     line-height: 20px;
                     text-align: center;
                     font-size: 12px;
-                    color: #ff3700;
+                    color: #000;
                     display: none
                 }
             }
             .me:hover{
+                color: #ff3700;
                 p{
                     display: block;
+                    color: #ff3700;
                 }
             }
             .invitation:hover{
+                color: #ff3700;
                 p{
                     display: block;
+                    color: #ff3700;
                 }
             }
             .newest:hover{
+                color: #ff3700;
                 p{
                     display: block;
+                    color: #ff3700;
                 }
             }
             .footprint:hover{
+                color: #ff3700;
                 p{
                     display: block;
+                    color: #ff3700;
                 }
             }
             .msg:hover{
+                color: #ff3700;
                 p{
                     display: block;
+                    color: #ff3700;
                 }
             }
             .headline:hover{
+                color: #ff3700;
                 p{
                     display: block;
+                    color: #ff3700;
                 }
             }
         }
         .fixd-menu:hover{
             cursor: pointer;
+            
         }
         .fixd-gotop{
             position: absolute;

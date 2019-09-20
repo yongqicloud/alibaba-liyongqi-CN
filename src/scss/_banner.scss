@@ -1,0 +1,172 @@
+.container_banner{
+    width: 590px;
+    height: 470px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.container_banner_right{
+    width: 190px;
+    height: 470px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; 
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.slide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.button-prev,.button-next{
+    padding: 0 5px;
+    width:25px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    line-height: 30px;
+    margin-top: -15px;
+    opacity: 0.5;
+}
+.button-next{
+    right: 0;
+}
+.button-prev1,.button-next1{
+    padding: 0 5px;
+    width:25px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    line-height: 30px;
+    margin-top: -15px;
+    opacity: 0.5;
+}
+.button-next1{
+    right: 0;
+}
+/* 因为布局存在多种情况,所以在此提前去对布局进行处理,先定义好类名 */
+/* 长条布局 */
+.sliver .slide{
+    float: left;
+}
+/* 堆在一起的定位布局 */
+.gathering .slide{
+    position: absolute;
+}
+.gathering .slide.show{
+    z-index: 2;
+}
+.gathering .slide.prev-show{
+    z-index: 1;
+}
+// --------------------------------
+.goods-size-right{
+    .details-container{
+        width:120px;
+        height:441px;
+        margin:0 auto 30px;
+        overflow: hidden;
+        position: relative;
+        .wrapper{
+            overflow: hidden;
+            .slide{
+                width:120px;
+                background: #f2f2f2;
+                .dl-content{
+                    width:100%;
+                    height:100%;
+                    dl{
+                        width:120px;
+                        height:137px;
+                        padding-bottom: 10px;
+                        dt{
+                            width:112px;
+                            height:112px;
+                            margin: 0 auto;
+                            img{
+                                width:100%;
+                                height:100%;
+                            }
+                        }
+                        dd{
+                            span{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        // .page-trigger{
+        //     position: absolute;
+        //     bottom: -50px;
+        //     z-index: 3333;
+        //     left: 10px;
+        //     width:100px;
+        //     height:20px;
+        //     background: #ffdddf;
+        // }
+        
+    }
+}
+.swiper-container{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    .wrapper{
+        width:100%;
+        height:100%;
+        .slide{
+            width:768px;
+            height:420px;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+    .swiper-button-prev,.swiper-button-next{
+        position: absolute;
+        top: 40%;
+        width:50px;
+        height:50px;
+        line-height: 50px;
+        border-radius: 50%;
+        background: #000;
+        color: #fff;
+        font-size: 22px;
+        opacity: .5;
+        text-align: center;
+
+    }
+    .swiper-button-prev{
+        left: 5%;
+    }
+    .swiper-button-next{
+        right: 5%;
+    }
+}

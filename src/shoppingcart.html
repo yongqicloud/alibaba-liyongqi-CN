@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="shoppingcart-html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body class="shoppingcart-body">
+    <div id="header-top">
+        <div class="header-top-cont">
+            <!-- 1、左侧图标 -->
+            <div class="mobile"><a href="#">手机阿里</a></div>
+            <!-- 2、请登录 -->
+            <div class="account-sign-status">
+                <ul>
+                    <li class="account-welcome vipInfoBox">
+                        <div class="nav-title">
+                            <span>欢迎来到阿里巴巴</span>
+                        </div>
+                    </li>
+                    <li class="account-signin redPackageInfoBox">
+                        <a href="#">请登录</a>
+                        <div class="nav-content">
+                            <div class="signin-close-box"></div>
+                            <div class="signin-title">先登录再采购，享更多权益！</div>
+                            <ul class="fd-clr">
+                                <li>
+                                    <i></i>
+                                    领取新人礼包
+                                </li>
+                                <li>
+                                    <i></i>
+                                    享新人权益
+                                </li>
+                                <li>
+                                    <i></i>
+                                    更精准推荐
+                                </li>
+                                <li>
+                                    <i></i>
+                                    记录浏览足迹
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="account-signup">
+                        <a href="#">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 3、登陆右侧导航  -->
+            <div class="topnav">
+                <ul>
+                    <li class="list-first">
+                        <div class="nav-title">
+                            <a href="#">1688首页</a>
+                        </div>
+                    </li>
+                    <li class="topnav-myali extra">
+                        <div class="nav-title">
+                            <a href="#" class="nav-arrow">我的阿里</a>
+                        </div>
+                        <div class="nav-content clearfix">
+                            <dl>
+                                <dt><a href="#">买家中心</a></dt>
+                                <dd><a href="#">已买到货品</a></dd>
+                                <dd><a href="#">优惠券</a></dd>
+                                <dd><a href="#">发布询问单</a></dd>
+                                <dd><a href="#">店铺动态</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">卖家中心</a></dt>
+                                <dd><a href="#">已卖出商品</a></dd>
+                                <dd><a href="#">发布供应商产品</a></dd>
+                                <dd><a href="#">管理供应产品</a></dd>
+                                <dd><a href="#">管理店铺</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">服务</a></dt>
+                                <dd><a href="#">开带你维修</a></dd>
+                                <dd><a href="#">应用工具</a></dd>
+                                <dd><a href="#">运营服务</a></dd>
+                                <dd><a href="#">综合服务</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="topnav-purchaselist extra topnav-purchaselist-empty">
+                        <div class="nav-title">
+                            <a href="#" class="nav-arrow">
+                                <span>进货单</span>
+                                <span class="purchaselist-value"><em>0</em></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="topnav-favorite extra">
+                        <div class="nav-title">
+                            <a href="#" class="nav-arrow">
+                                <i class="iconfont icon-star"></i>
+                                <span>我的收藏</span>
+
+                            </a>
+                        </div>
+                        <div class="nav-content clearfix">
+                            <dl>
+                                <dt><a href="#">货源</a></dt>
+                                <dd><a href="">收藏的货品</a></dd>
+                                <dd><a href="">铺货入淘的货品</a></dd>
+                                <dd><a href="">铺货跨境ERP的选品</a></dd>
+                                <dd><a href="">转发过的货品</a></dd>
+                                <dd><a href="">浏览足迹</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">供应商</a></dt>
+                                <dd><a href="#">收藏的供应商</a></dd>
+                                <dd><a href="#">收藏的服务</a></dd>
+                                <dd><a href="#">交易过的供应商</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="topnav-tp extra">
+                        <div class="nav-title">
+                            <a href="#" class="nav-arrow">诚信通官网</a>
+                        </div>
+                        <div class="nav-content clearfix">
+                            <dl>
+                                <dd><a href="#">
+                                        <i class="iconfont icon-phone"></i>
+                                        <span>免费联系我们</span>
+                                    </a></dd>
+                                <dd><a href="#">
+                                        <i class="iconfont icon-denglong"></i>
+                                        <span>功能体验馆</span>
+                                    </a></dd>
+                                <dd><a href="#">
+                                        <i class="iconfont icon-card"></i>
+                                        <span>新会员申请</span>
+                                    </a></dd>
+                                <dd><a href="#">
+                                        <i class="iconfont icon-phone"></i>
+                                        <span>老会员续费</span>
+                                    </a></dd>
+                                <dd><a href="#">
+                                        <i class="iconfont icon-phone"></i>
+                                        <span>会员活动</span>
+                                    </a></dd>
+                                <dd><a href="#">
+                                        <i class="iconfont icon-gift"></i>
+                                        <span>我的诚信通</span>
+                                    </a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="topnav-slsj extra">
+                        <div class="nav-title">
+                            <a href="#" class="nav-arrow">实力商家</a>
+
+                        </div>
+                        <div class="nav-content clearfix">
+                            <dl>
+                                <dd><a href="#">商家权益</a></dd>
+                                <dd><a href="#">入驻标准</a></dd>
+                                <dd><a href="#">成功案例</a></dd>
+                                <dd><a href="#">我要入驻</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="topnav-wsgys extra">
+                        <div class="nav-title">
+                            <a href="#" class="nav-arrow">我是供应商</a>
+                        </div>
+                        <div class="nav-content clearfix">
+                            <dl>
+                                <dd><a href="#">成长中心</a></dd>
+                                <dd><a href="#">成功经验</a></dd>
+                                <dd><a href="#">热门活动</a></dd>
+                                <dd><a href="#">营销推广</a></dd>
+                                <dd><a href="#">本地服务</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="topnav-kf extra">
+                        <div class="nav-title">
+                            <a href="#" class="nav-arrow">客服中心</a>
+                        </div>
+                        <div class="nav-content clearfix">
+                            <dl>
+                                <dd><a href="#">买家客服</a></dd>
+                                <dd><a href="#">卖家客服</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="topnav-sitemap extra new-sitemap">
+                        <div class="nav-title">
+                            <a href="#" class="nav-arrow">网站导航</a>
+                        </div>
+                        <div class="nav-content clearfix">
+                            <div class="hangye-category">
+                                <dl class="zone fd-clr">
+                                    <dt class="name ms-yh">行业市场</dt>
+                                    <dd class="detail"></dd>
+                                </dl>
+                                <dl class="zone fd-clr">
+                                    <dt class="name ms-yh">特色市场</dt>
+                                    <dd class="detail"></dd>
+                                </dl>
+                                <dl class="zone fd-clr">
+                                    <dt class="name ms-yh">采购平台</dt>
+                                    <dd class="detail"></dd>
+                                </dl>
+                                <dl class="zone fd-clr">
+                                    <dt class="name ms-yh">以商会友</dt>
+                                    <dd class="detail"></dd>
+                                </dl>
+                                <dl class="zone fd-clr">
+                                    <dt class="name ms-yh">常用工具</dt>
+                                    <dd class="detail"></dd>
+                                </dl>
+                                <dl class="zone fd-clr">
+                                    <dt class="name ms-yh">安全交易</dt>
+                                    <dd class="detail"></dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="more">
+
+                    </div> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="dil-search">
+        <div class="dil-search-cont">
+            <div class="ali-logo">
+                <img src="https://cbu01.alicdn.com/cms/upload/2015/131/133/2331131_1367035968.png" alt="">
+            </div>
+            <div class="search-cont">
+                <div class="input-box">
+                    <input type="text" placeholder="请输入产品关键字">
+                </div>
+                <div class="btn-box">
+                    <button class="search-self">搜本旺铺</button>
+                    <button class="search-all">搜本站</button>
+                </div>
+            </div>
+        </div>
+        
+    </div> -->
+    <div id="logo-cart">
+        <div class="logo-cart-cont">
+            <div class="logo-box-left">
+                <a href="" class="logo-img-box">
+                    <img src="https://cbu01.alicdn.com/cms/upload/2015/131/133/2331131_1367035968.png" alt="">
+                    
+                </a>
+                <span>我的进货单</span>
+            </div>
+            <div class="status-right">
+                <div class="status-box">
+                    <span class="goods-status">进货单状态：</span>
+                    <span class="progress-bar">
+                        <span class="bar">
+                            <span></span>
+                        </span>
+                        <span class="sum">30/200</span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="layer">
+        <div class="mod">
+            <ul>
+                <li class="active"><a href="">我的进货单</a></li>
+                <li><a href="">分销进货单</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="all-choice">
+        <div class="all-choice-cont">
+            <ul>
+                <li>
+                    <span class="lang-checkbox">
+                        <input type="checkbox">
+                    </span>
+                    <label for="">全选</label>
+                </li>
+                <li class="col-goods">货品</li>
+                <li class="col-quantity">数量</li>
+                <li class="col-unitprice">单价(元)</li>
+                <li class="col-rebate">优惠</li>
+                <li class="col-amount">金额(元)</li>
+            </ul>
+        </div>
+    </div>
+    <div id="active-cart">
+        <div class="active-cart-cont">
+            <!-- <div class="content-card">
+                <h2>
+                    <div class="company-title clearfix">
+                        <span class="check-btn">
+                            <input type="checkbox">
+                        </span>
+                        <a href="" class="cmp-name">广州市露拉贸易有限公司</a>
+                    </div>
+                </h2>
+                <div class="card-goods-body">
+                    <div class="opt">
+                        <span>
+                            <input type="checkbox">
+                        </span>
+                    </div>
+                    <div class="goods-image">
+                        <a href="">
+                            <img src="https://cbu01.alicdn.com/img/ibank/2018/899/384/9255483998_1782961829.80x80.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="goods-cart-main">
+                        <div class="goods-tag">
+                            <img src="https://img.alicdn.com/tfs/TB1ULpce1H2gK0jSZFEXXcqMpXa-144-28.jpg" alt="">
+                        </div>
+                        <div class="text-medium">2019秋季新款日系女装工厂 收腰金属圈原宿机车风衣外套女3843</div>
+                        <div class="write-tab">
+                            <div class="set-color">
+                                <dl>
+                                    <dt>颜色:</dt>
+                                    <dd>黑色</dd>
+                                </dl>
+                            </div>
+                            <div class="set-input">
+                                <span>
+                                    <input type="checkbox">
+                                </span>
+                            </div>
+                            <div class="set-size">
+                                <dl>
+                                    <dt>尺码:</dt>
+                                    <dd>均码</dd>
+                                </dl>
+                            </div>
+                            <div class="set-count">
+                                <span>
+                                    <a href="">-</a>
+                                    <input type="text" class = "calc-piece">
+                                    <a href="">+</a>
+                                </span>
+                            </div>
+                            <div class="set-unitprice">
+                                89.00
+                            </div>
+                            <div class="set-rebate">--</div>
+                            <div class="set-amont">1691.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-remove">
+                    <a href="" class="iconfont icon-shoucang"></a>
+                    <a href="" class="iconfont icon-delete"></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="checkout">
+        <div class="checkout-cont">
+            <div class="checkout-box">
+                <div class="actions clearfix">
+                    <span>
+                        <input type="checkbox">
+                    </span>
+                    <label for="">全选</label>
+                    <a href="">删除</a>
+                </div>
+                <div class="summary">
+                    <dl class="clearfix">
+                        <dt>卖家数量：</dt>
+                        <dd>
+                            <span>1</span>
+                            /
+                            <em>12</em>
+                        </dd>
+                        <dt>货品种类：</dt>
+                        <dd>
+                            <span>1</span>
+                            种
+                        </dd>
+                        <dt>数量总计：</dt>
+                        <dd>
+                            <span class="num-count">19</span>
+                            件
+                        </dd>
+                        <dt>货品金额总计（不包含运费）：</dt>
+                        <dd>
+                            <strong class="calc-result">1966.00</strong>
+                            元
+                        </dd>
+                    </dl>
+                </div>
+                <button class="result">结算</button>
+            </div>
+        </div>
+    </div>
+    <script src="./javascripts/require.js"></script>
+    <script>
+        require(["./javascripts/require.config.js"], function () {
+            require(["./javascripts/productlist"]);
+        })
+    </script>
+</body>
+
+</html>

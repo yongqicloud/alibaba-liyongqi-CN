@@ -103,14 +103,11 @@
       Magnifier.prototype.bigImgMove = function () {
             this.img_big.style.left = - this.left + "px";
             this.img_big.style.top = - this.top + "px";
-
             // css({
             //       left: - this.left,
             //       top: - this.top
             // })
       }
-
-
       var magnifier = new Magnifier()
       magnifier.init()
 

@@ -1,0 +1,47 @@
+// index.html 轮播图
+.banner-container{
+    width:100%;
+    height:100%;
+    position: relative;
+    background: lightcoral;
+    .banner-wrapper{
+        width:100%;
+        height:100%;
+        overflow: hidden;
+        .banner-slide{
+            float: left;
+            width:100%;
+            height:100%;
+            img{
+                width:100%;
+                height:100%;
+
+            }
+        }
+    }
+    .banner-btn-prev,.banner-btn-next{
+        position: absolute;
+        width:50px;
+        height:50px;
+        line-height: 50px;
+        border-radius:50%;
+        top :40%;
+        background: #222;
+        opacity: .5;
+        text-align: center;
+        
+        i{
+            color: #fff;
+            font-size: 22px;
+        }
+        
+    }
+    .banner-btn-prev{
+        left: 5%;
+    }
+    .banner-btn-next{
+        right: 5%;
+    }
+}
+
+

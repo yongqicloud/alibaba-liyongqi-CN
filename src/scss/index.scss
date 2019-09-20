@@ -6,19 +6,38 @@
 @import "./navtop";
 @import "./iconfont";
 @import "./search";
+// 商品列表 + banner
 @import "./infolist";
+// 卡片
 @import "./infocard";
+// 新闻
 @import "./news";
 @import "./recommendlist";
+// 底部
 @import "./footerbootom";
+// 右侧导航栏
 @import "./rightfixd";
+// 服务
 @import "./service";
+// 详情页
 @import "./details";
+//注册
 @import "./regested";
 // 登陆
 @import "./login";
+// 轮播
+@import "./swiperbanner";
+@import "./banner";
+@import "./productlist";
+@import "./shoppingcart";
+//
+.index-html,.index-body{
+      background: #f20227;
+      background: #f20227 url(https://img.alicdn.com/tfs/TB17Suxfoz1gK0jSZLeXXb9kVXa-2000-1267.png) no-repeat;
+      background-position: top;
+}
 body,html{
-      background: #ddd;
+      background: #fff;
 }
 
 .body-img-box{
