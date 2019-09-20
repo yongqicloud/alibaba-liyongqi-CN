@@ -546,6 +546,32 @@ body, html {
         display: inline-block;
         position: absolute;
         z-index: 99; }
+      #header-search .header-search-cont .logo ul {
+        position: absolute;
+        z-index: 1; }
+        #header-search .header-search-cont .logo ul li {
+          display: inline-block;
+          margin-top: 56px;
+          width: 21px;
+          height: 26px;
+          line-height: 26px;
+          text-align: center;
+          overflow: hidden;
+          font-weight: bold; }
+        #header-search .header-search-cont .logo ul li:first-child {
+          margin-left: 11px; }
+        #header-search .header-search-cont .logo ul li:nth-child(2) {
+          margin-left: 17px; }
+        #header-search .header-search-cont .logo ul li:nth-child(3) {
+          margin-left: 2px; }
+        #header-search .header-search-cont .logo ul li:nth-child(4) {
+          margin-left: 8px; }
+        #header-search .header-search-cont .logo ul li:nth-child(5) {
+          margin-left: 0; }
+        #header-search .header-search-cont .logo ul li:nth-child(6) {
+          margin-left: 7px; }
+        #header-search .header-search-cont .logo ul li:nth-child(7) {
+          margin-left: 1px; }
     #header-search .header-search-cont .searchbox {
       height: 73px;
       position: relative;

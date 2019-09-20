@@ -29,6 +29,41 @@
                 position: absolute;
                 z-index: 99;
             }
+            ul{
+                position: absolute;
+                z-index: 1;
+                li{
+                    display: inline-block;
+                    margin-top: 56px;
+                    width: 21px;
+                    height: 26px;
+                    line-height: 26px;
+                    text-align: center;
+                    overflow: hidden;
+                    font-weight: bold;
+                }
+                li:first-child{
+                    margin-left: 11px;
+                }
+                li:nth-child(2) {
+                    margin-left: 17px;
+                }
+                li:nth-child(3) {
+                    margin-left: 2px;
+                }
+                li:nth-child(4) {
+                    margin-left: 8px;
+                }
+                li:nth-child(5) {
+                    margin-left: 0;
+                }
+                li:nth-child(6) {
+                    margin-left: 7px;
+                }
+                li:nth-child(7) {
+                    margin-left: 1px;
+                }
+            }
         }
 
         // 搜索框body

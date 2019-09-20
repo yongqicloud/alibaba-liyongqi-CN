@@ -16,5 +16,6 @@ requirejs.config({
           "rendercart"   :  "./javascripts/rendercart",
           "denglu"   :  "./javascripts/denglu",
           "setcookie"   :  "./javascripts/setcookie",
+          "settime"   :  "./javascripts/settime",
     }
 })
